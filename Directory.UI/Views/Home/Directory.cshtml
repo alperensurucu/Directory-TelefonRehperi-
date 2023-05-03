@@ -1,0 +1,22 @@
+﻿@using Directory.Model.Entities
+@model List<Person>
+
+<h1>Rehber</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+       
+        <th>Address</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.FirstName @person.LastName</td>
+            <td>@person.PhoneNumber</td>
+            
+            <td>@person.Company</td>
+        </tr>
+    }
+</table>

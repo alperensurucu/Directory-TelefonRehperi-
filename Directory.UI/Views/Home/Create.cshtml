@@ -1,0 +1,24 @@
+﻿@model Directory.Models.Entities.Person
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Yeni Kişi Ekle</h1>
+
+<form method="post" asp-action="CreatePerson" asp-controller="Person">
+    <div>
+        <label for="firstName">Ad:</label>
+        <input type="text" id="firstName" name="FirstName" required>
+    </div>
+    <div>
+        <label for="lastName">Soyad:</label>
+        <input type="text" id="lastName" name="LastName" required>
+    </div>
+    <div>
+        <label for="phone">Telefon:</label>
+        <input type="text" id="phone" name="PhoneNumber" required>
+    </div>
+    <div>
+        <label for="company">Şirket:</label>
+        <input type="text" id="company" name="Company" required>
+    </div>
+    <button type="submit">Kaydet</button>
+</form>
